@@ -3,8 +3,6 @@
 <html lang="en">
 
 <head>
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-    <script>tinymce.init({ selector: 'textarea' });</script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
     <title>hello</title>
@@ -27,16 +25,22 @@
     </div>
 
 
+    {% block body %}
+
+    {% endblock body %}
+
     <div class="container">
         <ul class="posts">
             {% for post in posts %}
-
-            <h1><a href="{% url 'detail_page' %}">{{post.header}}</a></h1>
-            <p>{{post.date}}</p>
-
+            <li>
+                <h1><a href="post/{{ post.slug }}">{{post.header}}</a></h1>
+                <p>{{post.date}}</p>
+            </li>
             {% endfor %}
         </ul>
     </div>
+
+
 
 </body>
 

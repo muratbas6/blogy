@@ -1,53 +1,11 @@
+{% extends "index.html" %}
 {% load static %}
-<!doctype html>
-<html lang="en">
-
-<head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-        crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <!-- Bootstrap CSS -->
 
 
-</head>
+{% block body %}
+<div class="post-detail">
+    <h1>{{post.header}}</h1>
+    <p>{{post.text|safe}}</p>
 
-<body>
-
-
-    <div class="navbar">
-        <ul class="headers">
-            <li><a href="{% url 'main_page' %}">muratbas</a></li>
-            <li> <a href="https://github.com/muratbas6"> <i class="fab fa-github"></i></a></li>
-            <li><a href="https://twitter.com/syntaxerr00r"> <i class="fab fa-twitter"></i></a></li>
-        </ul>
-    </div>
-
-    <div class="post-detail">
-        <h1>Machine Learning</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iure aliquid aperiam corporis laboriosam
-            earum quasi iusto modi? Nihil recusandae natus odit tenetur consectetur quaerat? Asperiores consequatur
-            eaque veritatis nam? Quia, consequuntur velit pariatur, nulla eos nam obcaecati eius, deserunt eligendi
-            officiis illum aliquid labore quidem totam quos itaque ad vitae. Quisquam quia quasi perferendis itaque ex
-            sapiente eveniet optio esse nihil ducimus veniam eos impedit incidunt temporibus minus ipsa a rem, sunt,
-            mollitia aspernatur iusto, officia quos saepe. Rem iusto explicabo fugit. Delectus odio rerum repudiandae
-            ipsa quis dignissimos nam enim rem, mollitia sint, dolores corrupti ipsum nisi, repellendus possimus cumque
-            nobis. Nobis quo possimus recusandae distinctio laudantium corporis cupiditate eaque corrupti ad totam
-            atque, consequatur omnis alias officia dolor exercitationem ipsam doloremque autem doloribus voluptate,
-            similique quos tenetur facere. Itaque optio vitae reiciendis sed non illum, soluta perspiciatis! Aliquam at
-            voluptate labore repellat, fuga natus dolorem qui eligendi, voluptatibus, reprehenderit ex
-            doloribus tempora hic rem totam aliquid ducimus dolores dolore rerum. Adipisci, illo est. Ea, magni
-            provident consequatur, aspernatur, reprehenderit cum eos nostrum voluptate veniam id numquam! Officiis,
-            debitis accusamus beatae nobis sunt ab cum minima quis provident ex voluptate modi aliquam excepturi
-            incidunt, fuga nam fugit!
-        </p>
-    </div>
-
-
-
-</body>
-
-</html>
+</div>
+{% endblock body %}
