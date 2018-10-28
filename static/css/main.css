@@ -1,0 +1,68 @@
+.navbar{    
+    background-color: #073B4C;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.headers{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+    color:yellowgreen;
+    text-align: center;
+
+}
+
+.headers li a{
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+.headers li{
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #CDD1C4;
+}
+
+.posts{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.posts a{
+    text-decoration: none;
+    color:  #30323D;
+}
+
+.container{
+    text-align: center;
+}
+
+.post-detail{
+    padding: 10px;
+    text-align: center;
+    margin: 12px;
+}
+
+.post-detail h1{
+    color:  #30323D;
+}
+
+.post-detail p{
+    font-family:sans-serif;
+    width: 100%;
+    line-height: 28px;
+    text-align: justify;
+    
+    
+}
