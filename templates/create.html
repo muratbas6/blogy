@@ -5,7 +5,7 @@
 
 {% block body %}
 <div class="create">
-    <h1>Write a article!</h1>
+    <h1 class="create-header">Write an article!</h1>
     <form action="publish" method="GET">{% csrf_token %}
         {{form.media}}
         {{form.as_p}}

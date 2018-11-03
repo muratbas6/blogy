@@ -5,7 +5,9 @@
 {% block body %}
 <div class="post-detail">
     <h1>{{post.header}}</h1>
-    <p>{{post.text|safe}}</p>
-
+     <div class="post-text">
+        <p>{{post.text|safe}}</p>
+        <p>{{post.date}}</p>
+    </div>
 </div>
 {% endblock body %}
