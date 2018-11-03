@@ -10,7 +10,7 @@ from django.shortcuts import get_object_or_404
 
 
 def main_page(request):
-    posts = Post.objects.all()
+    posts = Post.objects.all().order_by('-date')
     return render(request, 'index.html', {"posts": posts})
 
 

@@ -94,7 +94,7 @@ body{
     border-radius: 50%;
     border: 4px solid;
     border-color: #073B4C;
-    background-color: #3a3a3a;
+    background-color: #CDD1C4;
     height: 50px;
     width: 50px;
     padding: 0;
@@ -108,7 +108,11 @@ body{
 }
 
 input[type="submit"]{
-    color: white;
+    color: black;
     font-family: monospace;
     
+}
+
+.fa-heart{
+    color:#073B4C;
 }

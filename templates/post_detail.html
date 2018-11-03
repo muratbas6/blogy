@@ -11,10 +11,7 @@
 
         <form action="like/{{ post.id  }}" method="post">
             {% csrf_token %}
-            
-
-            <input type='submit' class='pulsebutton' value="{{post.like}}">
-          
+            <button type="submit" class="pulsebutton"><i class="fas fa-heart"></i></button>
 
         </form>
 
