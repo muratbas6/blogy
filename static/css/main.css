@@ -89,3 +89,26 @@ body{
 .post-text{
     margin:15px;
 }
+
+.pulsebutton {
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: #073B4C;
+    background-color: #3a3a3a;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    outline: none;
+    transition: all 1.2s ease-in;
+}
+
+.pulsebutton:hover {
+    box-shadow: inset 0 0 0px 25px greenyellow;
+    transition: all 1.2s linear;
+}
+
+input[type="submit"]{
+    color: white;
+    font-family: monospace;
+    
+}
