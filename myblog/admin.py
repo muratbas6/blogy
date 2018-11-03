@@ -5,7 +5,7 @@ from .models import Post
 
 
 class adminPost(admin.ModelAdmin):
-    list_display = ["header", "date", "slug"]
+    list_display = ["header", "date", "slug","like"]
     list_display_links = ["date"]
     list_filter = ["date"]
     search_fields = ["header", "text"]

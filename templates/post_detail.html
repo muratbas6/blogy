@@ -8,6 +8,14 @@
      <div class="post-text">
         <p>{{post.text|safe}}</p>
         <p>{{post.date}}</p>
+
+        <form action="like/{{ post.id  }}" method="post">
+            {% csrf_token %}
+            <button type="submit" name="post_id" value="{{ post.id }}">like</button>
+            <p>{{post.like}}</p>
+        </form>
+
+
     </div>
 </div>
 {% endblock body %}

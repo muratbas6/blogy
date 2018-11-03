@@ -1,12 +1,14 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 from django.utils.text import slugify
+from django.urls import reverse
 
 # Create your models here.
 
 
 class Post(models.Model):
     header = models.CharField(max_length=30)
+    like = models.IntegerField(default=0)
     text = RichTextField()
     date = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(unique=True, editable=False,
@@ -30,3 +32,8 @@ class Post(models.Model):
         self.slug = self.get_unique_slug()
 
         return super(Post, self).save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse('detail_page', args=[str(self.slug)])
+        print("helo")
+
