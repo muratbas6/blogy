@@ -3,8 +3,12 @@
 
 
 {% block body %}
-<div class="post-detail">
+
+
+<div class="post-header">
     <h1>{{post.header}}</h1>
+</div>
+<div class="post-detail">
      <div class="post-text">
         <p>{{post.text|safe}}</p>
         <p>{{post.date}}</p>
@@ -12,7 +16,6 @@
         <form action="like/{{ post.id  }}" method="post">
             {% csrf_token %}
             <button type="submit" class="pulsebutton"><i class="fas fa-heart"></i></button>
-
         </form>
 
        
