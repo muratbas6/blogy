@@ -11,7 +11,7 @@ from django.shortcuts import get_object_or_404
 
 def main_page(request):
     posts = Post.objects.all().order_by('-date')
-    return render(request, 'index.html', {"posts": posts})
+    return render(request, 'main.html', {"posts": posts})
 
 
 def post_detail(request, slug):

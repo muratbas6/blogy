@@ -1,9 +1,10 @@
 .navbar{    
+    display: block; 
     background-color: #073B4C;
     width: 100%;
     height: 50px;
     text-align: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     
 }
